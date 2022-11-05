@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:autofillHints="name"
+            android:ems="10"
+            android:hint="@string/nombre"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/txtApellido"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:autofillHints="lastName"
+            android:ems="10"
+            android:hint="@string/apellido"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+        <EditText
+            android:id="@+id/txtNacimiento"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:autofillHints="dateOfBirth"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="false"
+            android:hint="@string/fecha_de_nacimiento"
+            android:inputType="date"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtApellido" />
+
+        <EditText
+            android:id="@+id/txtNacionalidad"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:autofillHints="nationality"
+            android:ems="10"
+            android:hint="@string/nacionalidad"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNacimiento" />
+
+        <EditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:autofillHints="phone"
+            android:ems="10"
+            android:hint="@string/tel_fono"
+            android:inputType="number"
+            android:maxLength="8"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNacimiento" />
+
+        <Spinner
+            android:id="@+id/spIdentificacion"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:contentDescription="@string/identificacion"
+            android:minHeight="48dp"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNacionalidad" />
+
+        <LinearLayout
+            android:id="@+id/layoutCed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Spinner
+                android:id="@+id/spProvinciaCed"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@string/provincia"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spIdentificacion" />
+
+            <EditText
+                android:id="@+id/txtTomoCed"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:autofillHints="tomo"
+                android:ems="10"
+                android:hint="@string/tomo"
+                android:inputType="number"
+                android:maxLength="4"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toStartOf="@+id/txtFolioCed"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toEndOf="@+id/spProvinciaCed"
+                app:layout_constraintTop_toBottomOf="@+id/spIdentificacion" />
+
+            <EditText
+                android:id="@+id/txtFolioCed"
+                android:layout_width="101dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="28dp"
+                android:autofillHints="folio"
+                android:ems="10"
+                android:hint="@string/folio"
+                android:inputType="number"
+                android:maxLength="6"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spIdentificacion" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/txtPasaporte"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:autofillHints="passport"
+            android:ems="10"
+            android:hint="@string/pasaporte"
+            android:inputType="textPersonName"
+            android:maxLength="20"
+            android:minHeight="48dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spIdentificacion" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnVolver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="@string/volver"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/siguiente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtPasaporte" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

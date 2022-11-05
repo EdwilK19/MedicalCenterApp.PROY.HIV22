@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="identificacion_array">
+        <item>Cédula</item>
+        <item>Pasaporte</item>
+    </string-array>
+    <string-array name="provincia_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>E</item>
+        <item>PE</item>
+        <item>N</item>
+        <item>1PL</item>
+        <item>2PL</item>
+        <item>3PL</item>
+        <item>4PL</item>
+        <item>5PL</item>
+        <item>6PL</item>
+        <item>7PL</item>
+        <item>8PL</item>
+        <item>9PL</item>
+        <item>10PL</item>
+        <item>8AV</item>
+    </string-array>
+</resources>

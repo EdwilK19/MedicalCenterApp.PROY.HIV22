@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">HPA4ProyFinal</string>
+    <string name="nombre">Nombre</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="pasaporte">Pasaporte</string>
+    <string name="apellido">Apellido</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="nacionalidad">Nacionalidad</string>
+    <string name="tomo">Tomo</string>
+    <string name="folio">Folio</string>
+    <string name="tel_fono">Teléfono</string>
+    <string name="correo_electronico">Correo Electrónico</string>
+    <string name="confirmar_contrasena">Confirmar Contraseña</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="usuario">Usuario</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="usuario_o_correo">Usuario o correo</string>
+    <string name="login">Login</string>
+    <string name="registro">Registro</string>
+    <string name="progress_login">Iniciando sesión...</string>
+    <string name="provincia">Provincia</string>
+    <string name="identificacion">Identificación</string>
+    <string name="regresar">Regresar</string>
+    <string name="volver">Volver</string>
+    <string name="progress_register">Registrando...</string>
+</resources>
